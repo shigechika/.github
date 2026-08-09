@@ -1,0 +1,30 @@
+name: Feature request / 機能要望
+description: Suggest an idea or enhancement. / アイデアや改善を提案する。
+labels: ["enhancement"]
+body:
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight / 事前確認
+      options:
+        - label: I searched existing issues and this is not a duplicate. / 既存の Issue を検索し、重複でないことを確認した。
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / 解決したい課題
+      description: What problem does this solve? Why is it needed? / どんな課題を解決するか、なぜ必要か。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution / 提案する解決策
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered / 検討した代替案
+    validations:
+      required: false

@@ -1,0 +1,65 @@
+name: Bug report / バグ報告
+description: Report a reproducible bug. / 再現可能なバグを報告する。
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report.
+        Please **confirm the bug reproduces on the latest version** before submitting.
+        バグ報告ありがとうございます。送信前に**最新バージョンで再現するか**ご確認ください。
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight / 事前確認
+      options:
+        - label: I searched existing issues and this is not a duplicate. / 既存の Issue を検索し、重複でないことを確認した。
+          required: true
+        - label: I reproduced this on the latest version. / 最新バージョンで再現することを確認した。
+          required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened? / 何が起きたか
+      description: A clear description of the bug and its impact. / バグの内容と影響を明確に。
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce / 再現手順
+      description: Minimal steps (and a proof of concept if possible). / 最小限の手順（可能なら PoC）。
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 期待した挙動
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit / バージョン・コミット
+      description: The release version or commit SHA you tested. / 検証したリリース版またはコミット SHA。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 環境
+      description: OS, runtime version, and anything else relevant. / OS・ランタイムのバージョン等。
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs / 関連ログ
+      description: Paste logs or error output. Redact any secrets. / ログやエラー出力を貼付。secrets は必ず伏せてください。
+      render: shell
+    validations:
+      required: false

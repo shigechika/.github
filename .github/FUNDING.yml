@@ -1,0 +1,10 @@
+# Sponsor button configuration.
+# Uncomment and fill in only the platforms you actually use.
+# While every line is commented out, no Sponsor button is shown (safe default).
+# 実際に使うプラットフォームだけコメントを外して記入してください。
+# すべてコメントアウトの間は Sponsor ボタンは表示されません（安全な既定）。
+
+# github: [shigechika]        # GitHub Sponsors (requires Sponsors enabled)
+# ko_fi: your_handle
+# buy_me_a_coffee: your_handle
+# custom: ["https://example.com/donate"]

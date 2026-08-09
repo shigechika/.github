@@ -1,0 +1,9 @@
+# Disable blank issues so reporters use a template.
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea / 質問・アイデア
+    url: https://github.com/shigechika
+    about: For questions and ideas, please use the repository's Discussions if enabled. / 質問やアイデアは、有効ならリポジトリの Discussions をご利用ください。
+  - name: Report a security vulnerability / 脆弱性の報告
+    url: https://github.com/shigechika/.github/blob/main/SECURITY.md
+    about: Do NOT open a public issue for security problems. See our security policy. / セキュリティ問題は公開 Issue にしないでください。セキュリティポリシー参照。
